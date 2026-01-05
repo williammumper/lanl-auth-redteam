@@ -10,4 +10,4 @@ This is a project to analyze the LANL authentication dataset to identify and und
 ## Setup
 
 Dependancies used: pandas numpy scikit-learn torch torchvision
- dask h5py matplotlib seaborn plotly shap lime
+ dask h5py matplotlib seaborn plotly shap lime notebook ipykernel
