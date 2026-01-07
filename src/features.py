@@ -39,6 +39,10 @@ def extract_features(df):
     
     # Volumetric/Behavioral Features
     df['Target_Count'] = df.groupby('User')['TargetComputer'].transform('nunique')
+
+    # Context Features
+    df['New_Source'] = df.groupby(['User', 'SourceComputer']).cumcount() == 0
+    df['New_Target'] = df.groupby(['User', 'TargetComputer']).cumcount() == 0
     
     feature_cols = [
         'User', 'Timestamp', 'Time_Delta_Log', 'Success_Int', 

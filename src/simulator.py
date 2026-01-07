@@ -98,7 +98,7 @@ class SOCSimulator:
             iso_scores = iso.score_samples(X_scaled)
             iso_flag = iso.predict(X_scaled) == -1
 
-            TOP_K = 1500
+            TOP_K = 10000
             candidate_idx = np.argsort(iso_scores)[:TOP_K]
 
             windows, valid_idx = gather_windows(
