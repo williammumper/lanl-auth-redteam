@@ -25,7 +25,7 @@ The LANL dataset contains 3,000,000+ daily authentication events from enterprise
 ## Results
 - Processes dataset in manageable chunks - resource friendly
 - Flags statistical anomalies but has limited effectiveness on sophisticated attacks
-- Initial apprach highlighted the gap between staitstical methods and real threat detection
+- Initial approach highlighted the gap between statistical methods and real threat detection
 - Identified areas for improvement: feature engineering, user catalogs
 
 ## Tech Stack
